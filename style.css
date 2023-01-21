@@ -39,7 +39,7 @@ p {
 }
 .text-md {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 18px;
   line-height: 32px;
   letter-spacing: -0.44444px;
 }
@@ -137,7 +137,7 @@ p {
   flex-direction: column;
   row-gap: 63px;
 }
-.hero-wrapper h1 {
+.hero-content h1 {
   max-width: 635px;
   position: relative;
   z-index: 20;
@@ -147,7 +147,7 @@ p {
   margin-bottom: 51px;
   margin-top: 40px;
 }
-.hero-wrapper img {
+.hero-wrapper .desktop-img {
   position: absolute;
   right: 0;
   top: 50%;
@@ -173,16 +173,21 @@ p {
   margin-right: auto;
 }
 .review-image {
-  width: 60%;
+  width: 50%;
 }
-.review-image img {
+.review-image .jeremy {
   position: absolute;
   /* top: -30px; */
   bottom: 0;
   height: 115%;
 }
 .review-content {
-  width: 40%;
+  width: 50%;
+  display: flex;
+}
+.review-content .curved-line {
+  margin-top: 60px;
+  margin-right: 50px;
 }
 .reviewer {
   margin-top: 40px;
@@ -213,22 +218,33 @@ footer {
   align-items: center;
   column-gap: 28px;
 }
+.mobile-img{
+  display: none;
+}
 
 /* mediaquery font and gradient arcs*/
 /* tablet view  */
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (max-width: 1439px) {
   /* typography */
   .text-xl {
     font-size: 56px;
     line-height: 64px;
     letter-spacing: -0.778px;
   }
+  .text-md {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .text-sm {
+    font-size: 16px;
+    line-height: 26px;
+  }
   .text-body {
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.88889px;
   }
-  .text-quote{
+  .text-quote {
     font-size: 18px;
     line-height: 32px;
     letter-spacing: 0.09px;
@@ -241,7 +257,6 @@ footer {
     flex-direction: column;
     height: auto;
     margin-top: 40px;
-    margin-bottom: 88px;
   }
   .hero-content {
     width: 100%;
@@ -257,40 +272,94 @@ footer {
     align-items: center;
     padding-left: 80px;
     padding-right: 80px;
+    margin-top: 88px;
   }
-  .hero-wrapper img {
+  .hero-wrapper .desktop-img {
     top: 0;
     transform: none;
     width: 281px;
   }
-  .hero-wrapper h1 {
+  .hero-content h1 {
     max-width: 500px;
   }
   .hero-content p {
     max-width: 300px;
   }
+  .review-wrapper {
+    bottom: -450px;
+  }
   .review-card {
     flex-direction: column;
     padding: 64px 58px;
   }
-  .review-content{
+  .review-content {
     width: 100%;
     text-align: center;
+    flex-direction: column;
   }
-  .review-content h3{
+  .review-content .curved-line {
+    margin: 40px 0;
+  }
+  .review-content h3 {
     font-size: 40px;
     line-height: 48px;
   }
-  .review-image{
+  .review-image {
+    position: relative;
     width: 100%;
+    height: 200px;
+  }
+  .review-image .jeremy {
+    left: 30%;
+    height: 400px;
   }
   footer {
     padding-top: 535px;
   }
 }
 
-
 /* mobile style */
 @media (max-width: 769px) {
-  
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .text-xl {
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: -0.52778px;
+  }
+  .btn {
+    padding: 12px 15px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .header-content {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .hero-content{
+    height: auto;
+  }
+  .hero-content h1 {
+    width: 100%;
+  }
+  .hero-content p{
+    max-width: 100%;
+  }
+  .hero-stats{
+    flex-direction: column;
+    text-align: center;
+  }
+  .desktop-img{
+    display: none;
+  }
+  .mobile-img{
+    display: block;
+    width: 100%;
+    margin-top: 55px;
+  }
+  .review-wrapper{
+    position: static;
+  }
 }
