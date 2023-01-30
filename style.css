@@ -167,6 +167,9 @@ header h1 {
 }
 .review-card {
   max-width: 1109px;
+  background-image: url(/assets/pattern-blur.svg);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
   background-color: #172339;
   border-radius: 15px;
   padding: 88px 125px;
@@ -292,7 +295,7 @@ footer {
     max-width: 300px;
   }
   .review-wrapper {
-    bottom: -545px;
+    bottom: -450px;
   }
   .review-card {
     flex-direction: column;
