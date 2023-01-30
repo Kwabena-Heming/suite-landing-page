@@ -115,15 +115,18 @@ p {
   padding-bottom: 50px;
   align-items: center;
 }
+header h1 {
+  color: rgba(23, 35, 57, 1);
+}
 
 /* hero classes */
 .hero {
   padding-bottom: 479px;
   position: relative;
+  color: rgba(23, 35, 57, 1);
 }
 .hero-wrapper {
   display: flex;
-  justify-content: space-between;
   height: calc(100vh - 176px);
   align-items: center;
   width: 100%;
@@ -208,6 +211,7 @@ footer {
   background: #f3ede7;
   padding-top: 360px;
   padding-bottom: 72px;
+  color: rgba(23, 35, 57, 1);
 }
 .footer-content {
   display: flex;
@@ -225,7 +229,7 @@ footer {
 
 /* mediaquery font and gradient arcs*/
 /* tablet view  */
-@media (max-width: 1439px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   /* typography */
   .text-xl {
     font-size: 56px;
@@ -288,7 +292,7 @@ footer {
     max-width: 300px;
   }
   .review-wrapper {
-    bottom: -450px;
+    bottom: -545px;
   }
   .review-card {
     flex-direction: column;
@@ -316,6 +320,7 @@ footer {
     transform: translateX(-50%);
     text-align: center;
     height: 400px;
+    width: 350px;
   }
   footer {
     padding-top: 535px;
@@ -323,7 +328,7 @@ footer {
 }
 
 /* mobile style */
-@media (max-width: 769px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   .container {
     padding-left: 16px;
     padding-right: 16px;
