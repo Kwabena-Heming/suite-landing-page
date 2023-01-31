@@ -317,10 +317,12 @@ footer {
   }
   .review-wrapper {
     top: -220px;
+   
   }
   .review-card {
     flex-direction: column;
     padding: 64px 58px;
+    background-image: none;
   }
   .review-content {
     width: 100%;
@@ -338,6 +340,8 @@ footer {
     position: relative;
     width: 100%;
     height: 200px;
+    background-image: url(/assets/pattern-blur.svg);
+    background-size: cover;
   }
   .review-image .jeremy {
     left: 50%;
@@ -397,6 +401,9 @@ footer {
   .review-wrapper {
     padding: 0px;
     top: -620px;
+  }
+  .review-image{
+    background-image: none;
   }
   .review-card {
     max-width: 100%;
