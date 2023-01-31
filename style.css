@@ -148,6 +148,16 @@ header h1 {
   width: 80%;
   position: relative;
 }
+.hero-text-wrap {
+  max-width: 635px;
+  position: relative;
+}
+.solution-curved-line {
+  position: absolute;
+  top: -50px;
+  right: 50px;
+  z-index: 30;
+}
 .hero-stats {
   width: 20%;
   display: flex;
@@ -315,9 +325,12 @@ footer {
   .hero-content p {
     max-width: 300px;
   }
+  .solution-curved-line {
+    max-width: 230px;
+    right: 170px;
+  }
   .review-wrapper {
     top: -220px;
-   
   }
   .review-card {
     flex-direction: column;
@@ -402,13 +415,18 @@ footer {
     padding: 0px;
     top: -620px;
   }
-  .review-image{
+  .review-image {
     background-image: none;
   }
   .review-card {
     max-width: 100%;
     padding: 64px 16px;
     background-image: none;
+  }
+  .solution-curved-line {
+    max-width: 150px;
+    right: 73px;
+    top: -40px;
   }
   .footer-content {
     flex-direction: column;
