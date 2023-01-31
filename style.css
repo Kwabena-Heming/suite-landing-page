@@ -73,6 +73,20 @@ p {
   text-transform: uppercase;
 }
 
+/* colors */
+.dark-blue {
+  color: #172339;
+}
+.grey {
+  color: #49566d;
+}
+.creamy {
+  color: #f3ede7;
+}
+.cream-white {
+  color: #faf8f6;
+}
+
 /* buttons */
 .btn {
   padding: 12px 24px;
@@ -123,7 +137,6 @@ header h1 {
 .hero {
   padding-bottom: 479px;
   position: relative;
-  color: rgba(23, 35, 57, 1);
 }
 .hero-wrapper {
   display: flex;
@@ -151,6 +164,9 @@ header h1 {
   margin-bottom: 51px;
   margin-top: 40px;
 }
+.hero-content button {
+  color: rgba(250, 248, 246, 1);
+}
 .hero-wrapper .desktop-img {
   position: absolute;
   right: 0;
@@ -162,8 +178,8 @@ header h1 {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -250px;
   padding: 0 40px;
+  top: -270px;
 }
 .review-card {
   max-width: 1109px;
@@ -212,14 +228,19 @@ header h1 {
 /* footer classes */
 footer {
   background: #f3ede7;
-  padding-top: 360px;
+  /* padding-top: 360px; */
   padding-bottom: 72px;
   color: rgba(23, 35, 57, 1);
+  position: relative;
+  height: 464px;
+  display: flex;
+  align-items: flex-end;
 }
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .footer-content .icons {
   display: flex;
@@ -232,7 +253,7 @@ footer {
 
 /* mediaquery font and gradient arcs*/
 /* tablet view  */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (max-width: 920px) {
   /* typography */
   .text-xl {
     font-size: 56px;
@@ -295,7 +316,7 @@ footer {
     max-width: 300px;
   }
   .review-wrapper {
-    bottom: -450px;
+    top: -220px;
   }
   .review-card {
     flex-direction: column;
@@ -323,15 +344,14 @@ footer {
     transform: translateX(-50%);
     text-align: center;
     height: 400px;
-    width: 350px;
   }
   footer {
-    padding-top: 535px;
+    height: 640px;
   }
 }
 
 /* mobile style */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-width: 540px) {
   .container {
     padding-left: 16px;
     padding-right: 16px;
@@ -351,7 +371,7 @@ footer {
     padding-bottom: 24px;
   }
   .hero {
-    padding-bottom: 0px;
+    padding-bottom: 860px;
   }
   .hero-content {
     height: auto;
@@ -375,13 +395,13 @@ footer {
     margin-top: 55px;
   }
   .review-wrapper {
-    position: static;
     padding: 0px;
-    margin-top: 200px;
+    top: -620px;
   }
   .review-card {
     max-width: 100%;
     padding: 64px 16px;
+    background-image: none;
   }
   .footer-content {
     flex-direction: column;
@@ -389,7 +409,7 @@ footer {
     row-gap: 33px;
   }
   footer {
-    padding-top: 56px;
-    padding-bottom: 81px;
+    padding-bottom: 80px;
+    height: 420px;
   }
 }
